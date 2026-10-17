@@ -1,0 +1,95 @@
+
+/* ========== BASE ========== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f6f8;
+}
+
+/* Datos siempre visibles */
+.DatosFijos {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  background: #7C3F82;
+  color: #fff;
+}
+.DatosFijos a { color: #fff; text-decoration: none; }
+
+/* Contenedor principal (centrado, ancho máximo) */
+.InformacionPrincipal { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+
+h1 { color: #1f3a5f; }
+h2 { color: #1f3a5f; border-bottom: 2px solid #1f3a5f; margin: 1.5rem 0 0.6rem; }
+h3 { margin: 0.8rem 0 0.4rem; }
+.subtitulo { color: #555; font-style: italic; margin-bottom: 0.5rem; }
+
+ul { padding-left: 1.2rem; }
+
+.etiquetas { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.etiquetas li { background: #FAD2E1; padding: 0.3rem 0.8rem; border-radius: 20px; }
+
+.boton {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1rem;
+  background: #5BC0BE;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.boton:hover { background: #3a9a98; }
+
+/* ========== SECCIONES DEL CV ========== */
+.InformacionP p { margin-bottom: 0.6rem; }
+.Estudios li { margin-bottom: 0.4rem; }
+
+/* Proyectos */
+.Proyectos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.Proyecto {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+/* ========== FORMAS DE CONTACTO ========== */
+.fin { background: #e8edf3; padding: 1.5rem; text-align: center; }
+.fin ul { list-style: none; padding: 0; margin-top: 1rem; }
+.fin li { margin: 0.4rem 0; }
+.oculto { display: none; }
+
+/* ========== PÁGINAS DE PROYECTO ========== */
+.detalle p { margin-bottom: 0.8rem; }
+.detalle a:not(.boton) { color: #1f3a5f; font-weight: bold; }
+
+/* Capturas con descripción */
+.capturas {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1rem 0;
+}
+.capturas figure {
+  background: #fff;
+  padding: .8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+.capturas img { width: 100%; border-radius: 6px; border: 1px solid #ccc; }
+.capturas figcaption { margin-top: .5rem; font-size: .9rem; color: #555; }
